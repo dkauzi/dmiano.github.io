@@ -1,9 +1,10 @@
+name: example-basic
+# This workflow represents a set of basic End-to-End tests
 on:
   push:
-    # Sequence of patterns matched against refs/heads
     branches:
-      - main
-    # Sequence of patterns matched against refs/tags
-    tags:
-      - v2
-      - v1.*
+      - 'master'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
